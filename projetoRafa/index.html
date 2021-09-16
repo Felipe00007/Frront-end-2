@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Meu Container -->
+        <section class="container">
+            <h2 id="titulo">Meus Pacientes</h2>
+            <!-- Minha Tabela -->
+
+            <table>
+                <!-- Início da Tabela -->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>GRD</th>
+                        <th>IMC</th>
+
+                    </tr>
+                </thead>
+                <!-- Fim da Tabela -->
+                <tbody id="tabela-pacientes">
+                    <tr class="paciente" id="primeiro-pacientes">
+                        <td class="info-nome">Paulo</td>
+                        <td class="info-peso">90</td>
+                        <td class="info-altura">1.79</td>
+                        <td class="info-gordura">30</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+                    <!-- Segunda Linha -->
+                    <tr class="paciente" id="primeiro-pacientes">
+                        <td class="info-nome">Ana</td>
+                        <td class="info-peso">70</td>
+                        <td class="info-altura">1.59</td>
+                        <td class="info-gordura">10</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+                    <!-- Terceira Linha -->
+                    <tr class="paciente">
+                        <td class="info-nome">Otavio</td>
+                        <td class="info-peso">100</td>
+                        <td class="info-altura">1.89</td>
+                        <td class="info-gordura">30</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container">
+            <h2 id="titulo-form">Adicionar novo paciente</h2>
+            <form id="form-adiciona">
+                <div class="grupo">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+                </div>
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="gordura">% de Gordura:</label>
+                    <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+                </div>
+        
+                <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+            </form>
+        </section>
+    </main>
+    
+    
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
